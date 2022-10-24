@@ -1,0 +1,21 @@
+.flexbox-for-call-stack {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    margin: 3em;
+}
+
+.events {
+    border: 1px solid black;
+    padding: 1em;
+    margin: 2px;
+}
+
+.activate-button {
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    text-align: center;
+}
