@@ -56,8 +56,9 @@ async function preparation(itemName, callback) {
     setTimeout(async () => {
         text = `console.log("Food prepped - " + ${itemName})`
         createEvent(text)
+        await new Promise(resolve => setTimeout(resolve, 3000))
         removeEvent()
-
+        await new Promise(resolve => setTimeout(resolve, 3000))
         await callback(itemName)
     }, preparationTime)
 
